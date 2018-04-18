@@ -10,7 +10,6 @@ import com.facebook.react.uimanager.ViewManager;
 
 public class RNGRPPackage implements ReactPackage {
 
-  @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
     modules.add(new GRP(reactContext));
@@ -21,7 +20,6 @@ public class RNGRPPackage implements ReactPackage {
     return Collections.emptyList();
   }
 
-  @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
     return Arrays.<ViewManager>asList();
   }
